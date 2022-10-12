@@ -1,0 +1,12 @@
+.home-container{
+    margin-top: 50px;
+    margin-left: 55px;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 10px;
+}
