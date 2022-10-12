@@ -9,6 +9,7 @@ const Product = ({quiz}) => {
         <h2>{name}</h2>
         <h4>Total: {total}</h4>
         <button className='button'>Click</button>
+       
        </div>
     )
         }

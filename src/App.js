@@ -22,6 +22,7 @@ function App() {
         },
         {
           path: '/quiz',
+          loader:  () =>  fetch('quizans.json'),
           element:<Quiz></Quiz>
         },
         {
@@ -31,6 +32,10 @@ function App() {
         {
           path: '/blog',
           element:<Blog></Blog>
+        },
+        {
+          path: '*',
+          element:<div>This is not found 404</div>
         },
 
       ]
