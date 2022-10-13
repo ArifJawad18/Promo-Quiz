@@ -7,8 +7,6 @@ import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 
-
-
 function App() {
   const router = createBrowserRouter ([
     {
@@ -22,9 +20,9 @@ function App() {
         },
         {
           path: '/quiz',
-          loader:  () =>  fetch('quizans.json'),
-          element:<Quiz></Quiz>
-        },
+          loader: async () => fetch('quizans.json'),
+        element:<Quiz></Quiz>
+      },
         {
           path: '/statistic',
           element:<Statistics>Statistic</Statistics>
@@ -35,15 +33,13 @@ function App() {
         },
         {
           path: '*',
-          element:<div>This is not found 404</div>
+          element:<div> Not Found Components 404</div>
         },
 
       ]
       
     }
   ])
-
- 
 
   return (
     <div className="App">

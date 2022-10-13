@@ -8,7 +8,7 @@ const Product = ({quiz}) => {
         <img src={picture} alt="" />
         <h2>{name}</h2>
         <h4>Total: {total}</h4>
-        <button className='button'>Click</button>
+        <button className='button'>All Quiz</button>
        
        </div>
     )
