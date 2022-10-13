@@ -1,8 +1,9 @@
 .product{
     border: 1px solid white;
-   border-radius: 10px;
-   background-color:steelblue;
-   padding-left: 0px;
+    border-radius: 10px;
+    background-color:steelblue;
+    padding-left: 0px;
+    color: white;
    
 }
 .product img{
@@ -10,14 +11,11 @@
     
 }
 .button{
-    background-color: white;
+    background-color:skyblue;
     border-radius: 5px;
     font-size: 20px;
-   
-
-    
 }
 .button:hover{
-    background-color:skyblue;  ;
-    color: black ;
+    background-color:black;  ;
+    color:white;
 }

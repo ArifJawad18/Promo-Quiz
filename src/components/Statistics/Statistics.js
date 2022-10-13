@@ -26,13 +26,17 @@ const data = [
   ];
     return (
         <div>
-            <LineChart width={990} height={500} data={data}>
+          
+       <div>
+            <LineChart width={370} height={300} data={data}>
             <Line type="monotone" dataKey="total" stroke="#82ca9d" />
             <XAxis dataKey="name" />
             <CartesianGrid strokeDasharray="3 3" />
           <YAxis />
           <Tooltip></Tooltip>
             </LineChart>
+        </div>
+        
         </div>
     );
 };

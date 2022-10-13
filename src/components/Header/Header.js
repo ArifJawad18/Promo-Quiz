@@ -12,12 +12,11 @@ const Header = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-3 my-lg-0"
+            className="me-auto my-2 my-lg-2"
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/quiz">Quiz</Nav.Link>
             <Nav.Link href="/statistic">Statistic</Nav.Link>
             <Nav.Link href="/blog">Blog</Nav.Link>
           </Nav>

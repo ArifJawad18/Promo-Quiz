@@ -20,7 +20,8 @@ function App() {
         },
         {
           path: '/quiz',
-          loader: async () => fetch('quizans.json'),
+          loader: async () => { return fetch('ans.json');
+        },
         element:<Quiz></Quiz>
       },
         {
@@ -33,7 +34,7 @@ function App() {
         },
         {
           path: '*',
-          element:<div> Not Found Components 404</div>
+          element:<div> Sorry, We Couldn't Find This Page 404</div>
         },
 
       ]
