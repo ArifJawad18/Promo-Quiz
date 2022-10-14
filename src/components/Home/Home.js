@@ -18,20 +18,27 @@ const Home = () => {
         <h1 className='text'>Start Answering</h1>
         <p className='sml-text'>Choose your favorite topic</p>
         </div>
-            <div className="home-container">
-                <div className="product-container">
-                {
+        <div className="home-container">
+            <div className="left-side">
+            <div className="activity-container">
+            {
                      quiz.map(quiz =><Product
                      key={quiz.id}
                     quiz={quiz}
                     ></Product>)
            }
-                </div>
+                </div>    
             </div>
-            </div>
+        </div>
+    </div>
 
 
 
+
+
+   
+        
+   
          
         
     );
