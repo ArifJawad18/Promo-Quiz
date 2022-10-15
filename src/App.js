@@ -3,9 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './components/layout/Main';
 import Home from './components/Home/Home';
-import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
+import Quizzes from './components/Quizzes/Quizzes';
+
 
 function App() {
   const router = createBrowserRouter ([
@@ -19,11 +20,12 @@ function App() {
         element:<Home></Home>
         },
         {
-          path: '/quiz',
-          loader: async () => { return fetch('ans.json');
+          path: '/quizzes/:quizzesId',
+          loader: async ({params}) =>{
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizzesId}`)
+          },
+          element: <Quizzes></Quizzes>
         },
-        element:<Quiz></Quiz>
-      },
         {
           path: '/statistic',
           element:<Statistics>Statistic</Statistics>
